@@ -1322,6 +1322,11 @@ cjs-module-lexer@^1.0.0:
   resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-1.2.2.tgz#9f84ba3244a512f3a54e5277e8eef4c489864e40"
   integrity sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA==
 
+classnames@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
+  integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
+
 cliui@^7.0.2:
   version "7.0.4"
   resolved "https://registry.yarnpkg.com/cliui/-/cliui-7.0.4.tgz#a0265ee655476fc807aea9df3df8df7783808b4f"
@@ -1517,6 +1522,24 @@ electron-to-chromium@^1.4.431:
   version "1.4.447"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.447.tgz#ac69d3a7b3713e9ae94bb30ba65c3114e4d76a38"
   integrity sha512-sxX0LXh+uL41hSJsujAN86PjhrV/6c79XmpY0TvjZStV6VxIgarf8SRkUoUTuYmFcZQTemsoqo8qXOGw5npWfw==
+
+embla-carousel-react@^8.0.0-rc07:
+  version "8.0.0-rc07"
+  resolved "https://registry.yarnpkg.com/embla-carousel-react/-/embla-carousel-react-8.0.0-rc07.tgz#526aacb736d4695dbfdeeeaeb3d87583973699f0"
+  integrity sha512-8JX2kIMTbqHvsG6O0XRUHdZJ/66kyKCwFwFVZXZ1YpdrdMlrMHBNyIQP+ETBWgOsNtpbcBeWyZx29YtzCVLgJA==
+  dependencies:
+    embla-carousel "8.0.0-rc07"
+    embla-carousel-reactive-utils "8.0.0-rc07"
+
+embla-carousel-reactive-utils@8.0.0-rc07:
+  version "8.0.0-rc07"
+  resolved "https://registry.yarnpkg.com/embla-carousel-reactive-utils/-/embla-carousel-reactive-utils-8.0.0-rc07.tgz#e998c28972a87da3809d450f8db0032d91faf884"
+  integrity sha512-MfdReTR3p0GTcUqLY0DNF5mkYRHF/pler9yBUjRjjjBb1OTQjcFedXYhoCDO49009x/IPM00kcbQQuEtJWpQRQ==
+
+embla-carousel@8.0.0-rc07:
+  version "8.0.0-rc07"
+  resolved "https://registry.yarnpkg.com/embla-carousel/-/embla-carousel-8.0.0-rc07.tgz#3d0efd24a45d4439f29299bf6b6c3e5cdedc40ee"
+  integrity sha512-IdGbZH042gRT0/3dOCbiv45jOt5E7jpM4h25VzyJujule/3GitJ1/Ib3U/X83auiI3aojKoBe13e1g5g7bwnjg==
 
 emittery@^0.10.2:
   version "0.10.2"
