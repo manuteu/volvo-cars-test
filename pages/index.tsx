@@ -1,14 +1,12 @@
 import React from "react";
 import Cars from "../src/components/Cars";
 
-function Teste() {
+function Home() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">teste</h1>
-      <Cars />
-
-    </div>
+    <section className="flex flex-col">
+    <Cars />
+    </section>
   );
 }
 
-export default Teste;
+export default Home;

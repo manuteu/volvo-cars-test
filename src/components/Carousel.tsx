@@ -1,12 +1,13 @@
 import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
 import React from "react";
-import { PropsWithChildren, useEffect, useState } from "react";
+import { PropsWithChildren, useEffect, useState, ReactNode } from "react";
 import CarouselControls from "./CarouselControls";
 import Dots from "./Dots";
-// ...
-type Props = PropsWithChildren & EmblaOptionsType;
-const Carousel = ({ children, ...options }: Props) => {
-  // ...
+
+type PropsReact = PropsWithChildren<ReactNode>;
+type PropsEmbla = EmblaOptionsType;
+
+const Carousel = ({ children }: PropsReact, { ...options }: PropsEmbla) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const length = React.Children.count(children);
@@ -15,21 +16,19 @@ const Carousel = ({ children, ...options }: Props) => {
 
   useEffect(() => {
     function selectHandler() {
-      // selectedScrollSnap gives us the current selected index.
       const index = emblaApi?.selectedScrollSnap();
       setSelectedIndex(index || 0);
     }
 
     emblaApi?.on("select", selectHandler);
-    // cleanup
     return () => {
       emblaApi?.off("select", selectHandler);
     };
   }, [emblaApi]);
   return (
     <>
-      <div className="overflow-hidden" ref={emblaRef}>
-        <div className="flex">{children}</div>
+      <div className="ml-3 mt-[5%] overflow-hidden" ref={emblaRef}>
+        <div className="teste">{children}</div>
       </div>
       <Dots itemsLength={length} selectedIndex={selectedIndex} />
       <CarouselControls

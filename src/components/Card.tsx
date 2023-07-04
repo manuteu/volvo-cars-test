@@ -14,34 +14,35 @@ const Card = (props: CardProps) => {
 
   return (
     <div>
-      <span>{props.bodyType}</span>
-      <div>
-        <span>{props.modelName}</span>
-        <span>{props.modelType}</span>
+      <span className="font-bold text-gray-500 text-sm uppercase">{props.bodyType}</span>
+      <div className="mb-4">
+        <span className="font-bold text-black text-lg mr-1">{props.modelName}</span>
+        <span className="text-gray-500 text-lg">{props.modelType}</span>
       </div>
       <Image
         src={props.imageUrl}
         width={400}
         height={300}
-        alt="Picture of the author"
+        alt="image"
       />
-      <div>
-        <div className="flex items-center">
-          <span>LEARN</span>
+      <div className="flex justify-center mt-6 text-[#326BB4] ">
+        <div className="flex items-center cursor-pointer hover:opacity-50 transition duration-500 ease-in-out">
+          <span className="text-lg  mr-2 font-bold ">LEARN</span>
           <Image
             src={chevronSmall}
-            width={16}
-            height={16}
-            alt="Picture of the author"
+            width={14}
+            height={14}
+            alt="chevron"
           />
         </div>
-        <div className="flex items-center">
-          <span>SHOP</span>
+        <div className="mx-3"/>
+        <div className="flex items-center cursor-pointer hover:opacity-50 transition duration-500 ease-in-out">
+          <span className="text-lg  mr-2 font-bold">SHOP</span>
           <Image
             src={chevronSmall}
-            width={16}
-            height={16}
-            alt="Picture of the author"
+            width={14}
+            height={14}
+            alt="chevron"
           />
         </div>
       </div>

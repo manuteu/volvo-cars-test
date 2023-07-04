@@ -1,4 +1,5 @@
-import classNames from "classnames";
+import Image from "next/image";
+import chevronCircled from "../../docs/chevron-circled.svg";
 
 type Props = {
   canScrollPrev: boolean;
@@ -8,7 +9,7 @@ type Props = {
 };
 const CarouselControls = (props: Props) => {
   return (
-    <div className="flex justify-end gap-2 ">
+    <div className="flex justify-end mr-6 mt-10 mb-10 sm:visible invisible">
       <button
         onClick={() => {
           if (props.canScrollPrev) {
@@ -16,13 +17,15 @@ const CarouselControls = (props: Props) => {
           }
         }}
         disabled={!props.canScrollPrev}
-        className={classNames({
-          "px-4 py-2 text-white rounded-md": true,
-          "bg-indigo-200": !props.canScrollPrev,
-          "bg-indigo-400": props.canScrollPrev,
-        })}
+        className="flex mr-2"
       >
-        Prev
+        <Image
+          src={chevronCircled}
+          width={42}
+          height={42}
+          alt="chevron"
+          className="rotate-180"
+        />
       </button>
       <button
         onClick={() => {
@@ -31,13 +34,14 @@ const CarouselControls = (props: Props) => {
           }
         }}
         disabled={!props.canScrollNext}
-        className={classNames({
-          "px-4 py-2 text-white rounded-md": true,
-          "bg-indigo-200": !props.canScrollNext,
-          "bg-indigo-400": props.canScrollNext,
-        })}
+        className="flex"
       >
-        Next
+        <Image
+          src={chevronCircled}
+          width={42}
+          height={42}
+          alt="chevron"
+        />
       </button>
     </div>
   );
