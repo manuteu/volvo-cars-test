@@ -1,5 +1,5 @@
 import Image from "next/image";
-import chevronCircled from "../../docs/chevron-circled.svg";
+import chevronCircled from "../../../docs/chevron-circled.svg";
 
 type Props = {
   canScrollPrev: boolean;

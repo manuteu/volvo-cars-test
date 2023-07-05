@@ -28,7 +28,7 @@ const Carousel = ({ children }: PropsReact, { ...options }: PropsEmbla) => {
   return (
     <>
       <div className="ml-3 mt-[5%] overflow-hidden" ref={emblaRef}>
-        <div className="teste">{children}</div>
+        <div className="children">{children}</div>
       </div>
       <Dots itemsLength={length} selectedIndex={selectedIndex} />
       <CarouselControls
